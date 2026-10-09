@@ -1,0 +1,361 @@
+# Projekt: Mappa Papír – Modern papír-írószer webshop redesign
+
+## Szereped
+
+Viselkedj senior full-stack fejlesztőként, e-commerce szoftverarchitektként, UI/UX designerként és üzleti elemzőként.
+
+Feladatod egy működő magyar papír-írószer vállalkozás webshopjának teljes vizuális és felhasználói élménybeli újratervezése.
+
+**Jelenlegi webshop:**
+http://webshop.mappapapir.hu/php/mainlapgen.php?tartalom=fooldal
+
+**Céges weboldal:**
+https://www.mappapapir.hu
+
+A cél egy modern, nagy teljesítményű, mobilbarát, könnyen használható e-commerce demó elkészítése.
+
+A projekt nem hivatalos, független redesign. Nem állunk kapcsolatban a vállalkozással.
+
+A végeredménynek egy valódi, professzionális webshop érzetét kell keltenie.
+
+Ne csupán látványtervet készíts: fejlessz működő, interaktív webalkalmazást.
+
+## 1. Jelenlegi rendszer és üzleti modell elemzése
+
+Mielőtt fejleszteni kezdenél, elemezd a jelenlegi webshopot és a céges weboldalt.
+
+Vizsgáld meg:
+- Navigációs struktúra.
+- Termékkategóriák.
+- Termékkeresés.
+- Terméklistázás.
+- Termékadatlapok.
+- Kosárfolyamat.
+- Regisztráció és bejelentkezés.
+- Céges vásárlók kiszolgálása.
+- Nyomdai szolgáltatások.
+- Mobilos használhatóság.
+- Vizuális problémák.
+- Vásárlói súrlódási pontok.
+
+Készíts rövid UI/UX és üzleti auditot.
+
+Azonosítsd azokat a pontokat, ahol egy modern webshop javíthatná a vásárlói élményt és támogathatná az értékesítést.
+
+Ha a meglévő oldal nem érhető el, ezt jelezd, és készíts a vállalkozás típusának megfelelő önálló webshopkoncepciót.
+
+Ne állíts nem ellenőrzött üzleti adatokat tényként.
+
+## 2. Üzleti koncepció
+
+A webshop három fő célcsoportot szolgáljon ki:
+
+### Magánszemélyek
+- Iskolaszerek.
+- Füzetek.
+- Írószerek.
+- Kreatív és hobbitermékek.
+- Otthoni irodaszerek.
+
+### Vállalkozások
+- Irodaszer-beszerzés.
+- Nagyobb mennyiségű vásárlás.
+- Gyakran rendelt termékek.
+- Gyors újrarendelési lehetőség.
+- Később céges fiókok és egyedi árak.
+
+### Nyomdai ügyfelek
+- Nyomdai szolgáltatások bemutatása.
+- Szolgáltatáskategóriák.
+- Kapcsolatfelvétel vagy ajánlatkérési információk.
+
+Az első demóban ne építs éles rendelésfeldolgozást vagy ajánlatküldő backendet.
+
+## 3. Design és arculat
+
+Modern, letisztult, professzionális webshopot szeretnék.
+
+A vizuális stílus:
+
+- Világos, törtfehér háttér.
+- Mélykék vagy sötét grafitszürke szövegek.
+- Elegáns, visszafogott narancs vagy terrakotta kiemelések.
+- Modern, jól olvasható tipográfia.
+- Nagyméretű keresőmező.
+- Átgondolt kategórianavigáció.
+- Esztétikus termékkártyák.
+- Finom hover-effektek.
+- Modern ikonok.
+- Sok whitespace.
+- Mobilon is könnyen használható elrendezés.
+
+Inspirációként modern e-commerce UX mintákat alkalmazz.
+
+Ne másolj konkrét webshopot, és kerüld a generikus sablonmegjelenést.
+
+A weboldal sugározzon megbízhatóságot, egyszerűséget és professzionalizmust.
+
+## 4. Technológiai stack
+
+Használd:
+
+- Next.js App Router
+- React
+- TypeScript
+- Tailwind CSS
+- Lucide React
+- Zustand vagy React Context az egyszerű kliensoldali kosárhoz
+- Zod, ahol validáció indokolt
+
+A rendszer legyen típusbiztos és komponensalapú.
+
+A termékadatokat az első verzióban strukturált lokális adatforrásban tárold.
+
+Ne használj szükségtelen backend infrastruktúrát.
+
+A későbbi valódi webshopintegráció legyen lehetséges a termékadatok és az UI elkülönítésével.
+
+## 5. Főoldal
+
+Készíts látványos e-commerce főoldalt.
+
+### Header
+- Logóterület.
+- Nagyméretű keresősáv.
+- Kategóriamenü.
+- Kosár ikon termékszámlálóval.
+- Mobilos navigáció.
+- Jól látható céges vásárlói belépési pont, ha a funkció egyértelműen demóként van jelölve.
+
+### Hero
+- Vizuálisan erős promóciós szekció.
+- Papír-írószer termékekhez illő képek.
+- Jól látható CTA.
+- A nem valós kedvezményeket egyértelműen jelöld demóként.
+
+### Népszerű kategóriák
+- Írószerek.
+- Irodaszerek.
+- Füzetek és papíráruk.
+- Iskolaszerek.
+- Kreatív termékek.
+- Irodai kiegészítők.
+
+Ezek kezdeti kategóriajavaslatok, nem feltétlenül a vállalkozás ellenőrzött kategóriái.
+
+### Kiemelt termékek
+- Termékkártyák.
+- Termékképek.
+- Árak.
+- Kosárba helyezés.
+- Termékadatlap megnyitása.
+
+Minden fiktív termék és ár legyen egyértelműen demóként azonosítható.
+
+### Céges vásárlóknak
+- Dedikált B2B szekció.
+- Gyors újrarendelés koncepciója.
+- Irodai beszerzés támogatása.
+- Későbbi egyedi árak lehetősége.
+
+### Nyomdai szolgáltatások
+- Modern szolgáltatáskártyák.
+- Rövid leírások.
+- Információs aloldalra vezető navigáció.
+
+### Footer
+- Céges elérhetőségek.
+- Információs oldalak.
+- Kapcsolat.
+- Jogi dokumentumok helye.
+- A nem hivatalos demó egyértelmű jelölése.
+
+## 6. Termékkatalógus
+
+Készíts teljesen működő terméklistázó oldalt.
+
+Funkciók:
+- Kategóriák szerinti böngészés.
+- Szabad szavas keresés.
+- Kategóriaszűrés.
+- Ár szerinti szűrés.
+- Rendezés név és ár alapján.
+- Termékkártyák.
+- Termékdarabszám kijelzése.
+- Üres találati állapot.
+- Mobilos szűrőpanel.
+
+A keresés és a szűrők valóban működjenek a demótermékadatokon.
+
+Ne legyenek csak vizuális, működés nélküli kontrollok.
+
+## 7. Termékadatlap
+
+Minden demótermékhez készíts részletes termékoldalt.
+
+Tartalom:
+- Terméknév.
+- Termékkép.
+- Ár.
+- Rövid leírás.
+- Kategória.
+- Termékváltozatok, ahol indokolt.
+- Darabszámválasztó.
+- Kosárba helyezés.
+- Kapcsolódó termékek.
+
+A kosárba helyezés valóban működjön.
+
+A nem létező készletinformációkat ne tüntesd fel valós adatként.
+
+## 8. Kosárrendszer
+
+Készíts működő kliensoldali demókosarat.
+
+Funkciók:
+- Termék hozzáadása.
+- Termék eltávolítása.
+- Darabszám módosítása.
+- Részösszeg számítása.
+- Kosár összértéke.
+- Üres kosár állapot.
+- Kosár ikon darabszámjelzővel.
+- Kosáradatok megőrzése localStorage segítségével.
+
+A demóban ne legyen valódi rendelésleadás vagy fizetés.
+
+A rendelés véglegesítésére szolgáló rész helyett jelenjen meg tájékoztatás, hogy ez bemutató verzió.
+
+## 9. További oldalak
+
+Készítsd el:
+
+**Rólunk**
+- Ellenőrzött céges információk.
+- Tevékenységi területek.
+- Modern bemutatkozó oldal.
+
+**Céges vásárlóknak**
+- B2B koncepció.
+- Gyakori rendelési forgatókönyvek.
+- Céges beszerzési lehetőségek.
+- Nem működő szolgáltatásokat ne tüntess fel elérhetőként.
+
+**Nyomdai szolgáltatások**
+- Szolgáltatások bemutatása.
+- Modern kártyás megjelenés.
+- Kapcsolati információk.
+
+**Kapcsolat**
+- Ellenőrzött céges cím és elérhetőségek.
+- Térképes útvonaltervezés.
+- Nyitvatartás, ha hitelesen elérhető.
+
+## 10. Termékadatok
+
+Hozz létre legalább 30–40 változatos demóterméket, amelyek több kategóriát lefednek.
+
+A demótermékek rendelkezzenek:
+- Egyedi azonosítóval.
+- Névvel.
+- Kategóriával.
+- Árral.
+- Leírással.
+- Képpel, ha jogszerűen rendelkezésre áll.
+- Kereshető tulajdonságokkal.
+
+Ne másold tömegesen a jelenlegi webshop termékadatbázisát.
+
+A demóadatokat tartsd külön a későbbi, valódi termékadatoktól.
+
+## 11. Architektúra
+
+Különítsd el:
+
+- UI komponensek.
+- Termékkatalógus.
+- Keresési és szűrési logika.
+- Kosár állapotkezelése.
+- Adatmodellek.
+- Tartalmi konfiguráció.
+- Későbbi API-integráció rétege.
+
+Tervezz olyan struktúrát, hogy később valós API vagy adatbázis csatlakoztatható legyen.
+
+A megoldás legyen könnyen bővíthető, de ne legyen túltervezett.
+
+## 12. SEO, teljesítmény és akadálymentesség
+
+Valósítsd meg:
+- SEO-barát kategóriaoldalak.
+- Termékoldali metadata.
+- Dinamikus útvonalak.
+- Strukturált termékadatok csak akkor, ha azok igazak, nem megtévesztők és nem indexelhetők valós ajánlatként.
+- Reszponzív képek.
+- Jó betöltési sebesség.
+- WCAG 2.2 AA célú akadálymentesség.
+- Billentyűzettel használható felület.
+- Mobilos optimalizálás.
+
+A publikus demót állítsd noindex állapotúra, hogy a keresők ne kezeljék hivatalos webshopként.
+
+## 13. Biztonság és üzleti korlátozások
+
+Ez kizárólag független, nem hivatalos demó.
+
+- Ne dolgozz valódi ügyféladatokkal.
+- Ne készíts valódi fizetési integrációt.
+- Ne gyűjts személyes vásárlói információkat.
+- Ne küldj rendeléseket a vállalkozásnak.
+- Ne csatlakozz engedély nélkül a meglévő webshop adminfelületéhez vagy privát API-jához.
+- Ne használj jogosulatlanul átvett képeket.
+- Ne tüntess fel fiktív termékeket vagy kedvezményeket valós ajánlatként.
+- Minden oldalon legyen látható a demó státusz.
+
+## 14. Fejlesztési folyamat
+
+Dolgozz az alábbi sorrendben:
+
+1. Meglévő weboldalak elemzése.
+2. Rövid üzleti és UX audit.
+3. Információs architektúra.
+4. Designrendszer kialakítása.
+5. Főoldal fejlesztése.
+6. Termékkatalógus fejlesztése.
+7. Keresés és szűrők implementálása.
+8. Termékadatlapok implementálása.
+9. Kosárrendszer implementálása.
+10. További aloldalak.
+11. Mobilos optimalizálás.
+12. Hibakezelés és üres állapotok.
+13. Teljesítményoptimalizálás.
+14. Tesztelés és dokumentáció.
+
+Végezz elérhető lint, typecheck és production build ellenőrzéseket.
+
+A kosár és a keresés alapvető működésére készíts automatizált teszteket is.
+
+## 15. Dokumentáció
+
+Készíts README.md fájlt:
+
+- Telepítési lépések.
+- Projektstruktúra.
+- Indítási parancsok.
+- Használt technológiák.
+- Elkészült funkciók.
+- Demóadatok forrása és korlátai.
+- Ismert hiányosságok.
+- Későbbi webshopintegráció lehetőségei.
+
+## Végső cél
+
+Egy prémium megjelenésű, professzionális, modern, teljesen reszponzív papír-írószer webshop demó elkészítése.
+
+A látogatók tudjanak termékeket keresni, szűrni, termékoldalakat megnyitni és demókosárba helyezni.
+
+A projekt legyen működőképes lokális környezetben, és alkalmas legyen potenciális ügyfélnek történő bemutatásra.
+
+Ne állj meg a tervezésnél vagy a látványtervnél. Implementáld a teljes működő demóalkalmazást.
+
+Kezdd a meglévő rendszer elemzésével, majd végezd el a fejlesztést.
